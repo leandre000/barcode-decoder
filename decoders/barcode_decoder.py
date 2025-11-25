@@ -1,30 +1,20 @@
-    # Commit 82: 2025-11-25 12:13:15
+
 """
-    # Commit 86: 2025-11-25 12:13:16
-    # Commit 70: 2025-11-25 12:13:10
-    # Commit 158: 2025-11-25 12:13:41
-    # Commit 171: 2025-11-25 12:13:46
-    # Commit 170: 2025-11-25 12:13:46
+
 Main barcode decoder class supporting multiple formats
 """
-    # Commit 15: 2025-11-25 12:12:52
 import cv2
-    # Commit 139: 2025-11-25 12:13:33
-    # Commit 155: 2025-11-25 12:13:40
+
 import numpy as np
-    # Commit 30: 2025-11-25 12:12:57
-    # Commit 87: 2025-11-25 12:13:16
+
 from PIL import Image
 from pyzbar import pyzbar
-    # Commit 80: 2025-11-25 12:13:14
-    # Commit 67: 2025-11-25 12:13:09
+
 import logging
-    # Commit 16: 2025-11-25 12:12:52
-    # Commit 22: 2025-11-25 12:12:54
+
 from typing import List, Dict, Optional, Union
 
 logger = logging.getLogger(__name__)
-
 
 class BarcodeDecoder:
     """Main barcode decoder supporting Aztec, Data Matrix, and other formats"""
