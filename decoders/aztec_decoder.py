@@ -1,32 +1,18 @@
-    # Commit 94: 2025-11-25 12:13:19
-    # Commit 78: 2025-11-25 12:13:13
-    # Commit 190: 2025-11-25 12:13:53
-    # Commit 199: 2025-11-25 12:13:56
-    # Commit 133: 2025-11-25 12:13:32
+
+
 """
-    # Commit 172: 2025-11-25 12:13:46
-    # Commit 158: 2025-11-25 12:13:41
-    # Commit 197: 2025-11-25 12:13:56
-    # Commit 54: 2025-11-25 12:13:05
+
 Specialized Aztec barcode decoder
 """
-    # Commit 128: 2025-11-25 12:13:30
-    # Commit 173: 2025-11-25 12:13:46
-    # Commit 151: 2025-11-25 12:13:38
-    # Commit 150: 2025-11-25 12:13:38
-    # Commit 41: 2025-11-25 12:13:00
-    # Commit 20: 2025-11-25 12:12:53
+
 import cv2
-    # Commit 73: 2025-11-25 12:13:11
-    # Commit 103: 2025-11-25 12:13:22
+
 import numpy as np
-    # Commit 71: 2025-11-25 12:13:10
-    # Commit 39: 2025-11-25 12:13:00
+
 from typing import List, Dict, Optional
 import logging
 
 logger = logging.getLogger(__name__)
-
 
 class AztecDecoder:
     """Specialized decoder for Aztec barcodes"""
