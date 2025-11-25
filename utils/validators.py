@@ -1,30 +1,14 @@
-    # Commit 164: 2025-11-25 12:13:44
-    # Commit 183: 2025-11-25 12:13:50
+
+
 """
-    # Commit 57: 2025-11-25 12:13:06
-    # Commit 138: 2025-11-25 12:13:33
-    # Commit 192: 2025-11-25 12:13:53
-    # Commit 110: 2025-11-25 12:13:24
-    # Commit 23: 2025-11-25 12:12:54
-    # Commit 154: 2025-11-25 12:13:39
-    # Commit 160: 2025-11-25 12:13:42
-    # Commit 67: 2025-11-25 12:13:09
+
 Validation utilities
-    # Commit 145: 2025-11-25 12:13:36
-    # Commit 157: 2025-11-25 12:13:41
-    # Commit 102: 2025-11-25 12:13:21
-    # Commit 135: 2025-11-25 12:13:32
-    # Commit 21: 2025-11-25 12:12:54
+
 """
-    # Commit 93: 2025-11-25 12:13:19
-    # Commit 126: 2025-11-25 12:13:29
-    # Commit 79: 2025-11-25 12:13:13
+
 import os
 from typing import Union
 from werkzeug.datastructures import FileStorage
-
-    # Commit 17: 2025-11-25 12:12:52
-    # Commit 27: 2025-11-25 12:12:56
 
 def validate_image_file(filename: str) -> bool:
     """
@@ -43,7 +27,6 @@ def validate_image_file(filename: str) -> bool:
     extension = filename.rsplit('.', 1)[1].lower() if '.' in filename else ''
     
     return extension in allowed_extensions
-
 
 def validate_file_size(file: FileStorage, max_size: int = 16 * 1024 * 1024) -> bool:
     """
@@ -64,7 +47,6 @@ def validate_file_size(file: FileStorage, max_size: int = 16 * 1024 * 1024) -> b
     file.seek(0)
     
     return size <= max_size and size > 0
-
 
 def validate_image_dimensions(image_path: str, 
                               max_width: int = 10000,
