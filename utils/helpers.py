@@ -1,36 +1,12 @@
-    # Commit 181: 2025-11-25 12:13:49
-    # Commit 47: 2025-11-25 12:13:02
-    # Commit 31: 2025-11-25 12:12:57
-    # Commit 25: 2025-11-25 12:12:55
-    # Commit 104: 2025-11-25 12:13:22
-    # Commit 63: 2025-11-25 12:13:07
-    # Commit 174: 2025-11-25 12:13:47
-    # Commit 116: 2025-11-25 12:13:26
-    # Commit 169: 2025-11-25 12:13:45
-    # Commit 127: 2025-11-25 12:13:30
-    # Commit 98: 2025-11-25 12:13:20
-    # Commit 22: 2025-11-25 12:12:54
-    # Commit 149: 2025-11-25 12:13:37
-    # Commit 163: 2025-11-25 12:13:43
-    # Commit 73: 2025-11-25 12:13:11
-    # Commit 65: 2025-11-25 12:13:08
-    # Commit 2: 2025-11-25 12:12:48
-    # Commit 112: 2025-11-25 12:13:25
-    # Commit 100: 2025-11-25 12:13:21
-    # Commit 58: 2025-11-25 12:13:06
-    # Commit 77: 2025-11-25 12:13:13
+
+
 """
 Helper utility functions
-    # Commit 30: 2025-11-25 12:12:57
 """
 import os
-    # Commit 19: 2025-11-25 12:12:53
 import hashlib
-    # Commit 1: 2025-11-25 12:12:48
 from datetime import datetime
-    # Commit 23: 2025-11-25 12:12:54
 from typing import Optional
-
 
 def generate_unique_filename(original_filename: str, prefix: str = '') -> str:
     """
@@ -51,7 +27,6 @@ def generate_unique_filename(original_filename: str, prefix: str = '') -> str:
         return f"{prefix}_{timestamp}_{hash_suffix}{ext}"
     return f"{timestamp}_{hash_suffix}{ext}"
 
-
 def format_file_size(size_bytes: int) -> str:
     """
     Format file size in human-readable format
@@ -67,7 +42,6 @@ def format_file_size(size_bytes: int) -> str:
             return f"{size_bytes:.2f} {unit}"
         size_bytes /= 1024.0
     return f"{size_bytes:.2f} TB"
-
 
 def sanitize_filename(filename: str) -> str:
     """
@@ -93,7 +67,6 @@ def sanitize_filename(filename: str) -> str:
         filename = name[:255 - len(ext)] + ext
     
     return filename
-
 
 def get_image_info(image_path: str) -> dict:
     """
@@ -121,7 +94,6 @@ def get_image_info(image_path: str) -> dict:
             }
     except Exception:
         return {}
-
 
 def create_response(success: bool, data: Optional[dict] = None, 
                    message: Optional[str] = None, error: Optional[str] = None) -> dict:
