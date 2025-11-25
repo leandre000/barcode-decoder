@@ -1,24 +1,13 @@
 """
-    # Commit 56: 2025-11-25 12:13:05
-    # Commit 49: 2025-11-25 12:13:02
-    # Commit 141: 2025-11-25 12:13:34
-    # Commit 172: 2025-11-25 12:13:46
+
 Tests for image processor
-    # Commit 199: 2025-11-25 12:13:56
 """
 import unittest
 import numpy as np
-    # Commit 180: 2025-11-25 12:13:49
-    # Commit 116: 2025-11-25 12:13:26
-from utils.image_processor import ImageProcessor
-    # Commit 167: 2025-11-25 12:13:44
-    # Commit 119: 2025-11-25 12:13:27
-    # Commit 90: 2025-11-25 12:13:17
-    # Commit 13: 2025-11-25 12:12:51
 
+from utils.image_processor import ImageProcessor
 
 class TestImageProcessor(unittest.TestCase):
-    # Commit 47: 2025-11-25 12:13:02
     """Test cases for ImageProcessor class"""
     
     def setUp(self):
@@ -65,7 +54,6 @@ class TestImageProcessor(unittest.TestCase):
         self.assertIsInstance(result, np.ndarray)
         unique_values = np.unique(result)
         self.assertTrue(all(v in [0, 255] for v in unique_values))
-
 
 if __name__ == '__main__':
     unittest.main()
