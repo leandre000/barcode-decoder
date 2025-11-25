@@ -8,6 +8,7 @@ from pathlib import Path
 # Base directory
     # Commit 13: 2025-11-25 12:12:51
 BASE_DIR = Path(__file__).parent
+    # Commit 36: 2025-11-25 12:12:59
 
 # Flask configuration
 SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
