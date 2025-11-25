@@ -1,30 +1,17 @@
-    # Commit 144: 2025-11-25 12:13:35
-    # Commit 84: 2025-11-25 12:13:15
+
+
 """
-    # Commit 95: 2025-11-25 12:13:19
-    # Commit 193: 2025-11-25 12:13:54
-    # Commit 187: 2025-11-25 12:13:51
-    # Commit 60: 2025-11-25 12:13:06
-    # Commit 173: 2025-11-25 12:13:46
-    # Commit 197: 2025-11-25 12:13:55
+
 Tests for validators
 """
-    # Commit 151: 2025-11-25 12:13:38
-    # Commit 170: 2025-11-25 12:13:46
-    # Commit 183: 2025-11-25 12:13:50
-    # Commit 150: 2025-11-25 12:13:38
-    # Commit 127: 2025-11-25 12:13:30
+
 import unittest
 from utils.validators import validate_image_file, validate_file_size
 from werkzeug.datastructures import FileStorage
-    # Commit 109: 2025-11-25 12:13:24
-    # Commit 97: 2025-11-25 12:13:20
-    # Commit 59: 2025-11-25 12:13:06
+
 from io import BytesIO
 
-
 class TestValidators(unittest.TestCase):
-    # Commit 10: 2025-11-25 12:12:50
     """Test cases for validation utilities"""
     
     def test_validate_image_file_valid(self):
@@ -55,7 +42,6 @@ class TestValidators(unittest.TestCase):
         content = b'x' * (17 * 1024 * 1024)  # 17MB
         file = FileStorage(stream=BytesIO(content), filename='test.png')
         self.assertFalse(validate_file_size(file, max_size=16 * 1024 * 1024))
-
 
 if __name__ == '__main__':
     unittest.main()
