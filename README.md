@@ -4,12 +4,12 @@ A professional, modern barcode decoder application with support for Aztec and Da
 
 ## Features
 
-- 🎯 **Multiple Barcode Formats**: Supports Aztec, Data Matrix, QR Code, and many other formats
-- 🖼️ **Image Processing**: Advanced image preprocessing and enhancement
-- 🌐 **Modern Web UI**: Beautiful, responsive user interface
-- ⚡ **Real-time Decoding**: Fast and accurate barcode detection
-- 📦 **Batch Processing**: Process multiple images at once
-- 🔍 **Image Enhancement**: Automatic contrast, brightness, and noise reduction
+-  **Multiple Barcode Formats**: Supports Aztec, Data Matrix, QR Code, and many other formats
+-  **Image Processing**: Advanced image preprocessing and enhancement
+-  **Modern Web UI**: Beautiful, responsive user interface
+-  **Real-time Decoding**: Fast and accurate barcode detection
+-  **Batch Processing**: Process multiple images at once
+-  **Image Enhancement**: Automatic contrast, brightness, and noise reduction
 
 ## Installation
 
