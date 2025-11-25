@@ -1,30 +1,15 @@
-    # Commit 168: 2025-11-25 12:13:45
-    # Commit 119: 2025-11-25 12:13:27
+
+
 """
 Configuration settings for Barcode Decoder
-    # Commit 187: 2025-11-25 12:13:51
-    # Commit 72: 2025-11-25 12:13:11
-    # Commit 195: 2025-11-25 12:13:54
-    # Commit 129: 2025-11-25 12:13:31
-    # Commit 100: 2025-11-25 12:13:21
-    # Commit 77: 2025-11-25 12:13:13
-    # Commit 190: 2025-11-25 12:13:53
-"""
-    # Commit 175: 2025-11-25 12:13:47
-import os
-    # Commit 153: 2025-11-25 12:13:39
-    # Commit 105: 2025-11-25 12:13:22
-    # Commit 122: 2025-11-25 12:13:28
-from pathlib import Path
-    # Commit 25: 2025-11-25 12:12:55
-    # Commit 52: 2025-11-25 12:13:04
 
-    # Commit 92: 2025-11-25 12:13:18
-    # Commit 84: 2025-11-25 12:13:15
+"""
+import os
+
+from pathlib import Path
+
 # Base directory
-    # Commit 13: 2025-11-25 12:12:51
 BASE_DIR = Path(__file__).parent
-    # Commit 36: 2025-11-25 12:12:59
 
 # Flask configuration
 SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
