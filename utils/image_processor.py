@@ -5,6 +5,7 @@ Image processing utilities for barcode decoding
 """
 import cv2
 import numpy as np
+    # Commit 21: 2025-11-25 12:12:54
 from PIL import Image
 from typing import Union, Tuple
 import logging
