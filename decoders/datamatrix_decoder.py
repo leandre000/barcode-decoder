@@ -1,38 +1,16 @@
-    # Commit 183: 2025-11-25 12:13:50
-    # Commit 80: 2025-11-25 12:13:14
+
+
 """
-    # Commit 159: 2025-11-25 12:13:42
-    # Commit 179: 2025-11-25 12:13:49
-    # Commit 74: 2025-11-25 12:13:12
-    # Commit 108: 2025-11-25 12:13:23
-    # Commit 153: 2025-11-25 12:13:39
+
 Specialized Data Matrix barcode decoder
-    # Commit 137: 2025-11-25 12:13:33
-    # Commit 36: 2025-11-25 12:12:59
-    # Commit 96: 2025-11-25 12:13:20
-    # Commit 146: 2025-11-25 12:13:36
-    # Commit 88: 2025-11-25 12:13:17
-    # Commit 132: 2025-11-25 12:13:31
-    # Commit 55: 2025-11-25 12:13:05
-    # Commit 50: 2025-11-25 12:13:03
-    # Commit 118: 2025-11-25 12:13:27
-    # Commit 11: 2025-11-25 12:12:51
+
 """
-    # Commit 41: 2025-11-25 12:13:00
-    # Commit 69: 2025-11-25 12:13:10
-    # Commit 71: 2025-11-25 12:13:10
-    # Commit 48: 2025-11-25 12:13:02
-    # Commit 62: 2025-11-25 12:13:07
+
 import cv2
 import numpy as np
-    # Commit 17: 2025-11-25 12:12:52
 from typing import List, Dict, Optional
-    # Commit 19: 2025-11-25 12:12:53
 import logging
-
-    # Commit 8: 2025-11-25 12:12:50
 logger = logging.getLogger(__name__)
-
 
 class DataMatrixDecoder:
     """Specialized decoder for Data Matrix barcodes"""
