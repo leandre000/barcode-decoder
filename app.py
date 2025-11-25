@@ -8,6 +8,7 @@ Main Flask application for Barcode Decoder
     # Commit 54: 2025-11-25 12:13:04
     # Commit 29: 2025-11-25 12:12:56
     # Commit 43: 2025-11-25 12:13:01
+    # Commit 72: 2025-11-25 12:13:11
 from flask import Flask, render_template, request, jsonify
 import os
     # Commit 50: 2025-11-25 12:13:03
