@@ -1,0 +1,45 @@
+"""
+Tests for validators
+"""
+import unittest
+from utils.validators import validate_image_file, validate_file_size
+from werkzeug.datastructures import FileStorage
+from io import BytesIO
+
+
+class TestValidators(unittest.TestCase):
+    """Test cases for validation utilities"""
+    
+    def test_validate_image_file_valid(self):
+        """Test validation of valid image files"""
+        self.assertTrue(validate_image_file('test.png'))
+        self.assertTrue(validate_image_file('test.jpg'))
+        self.assertTrue(validate_image_file('test.jpeg'))
+        self.assertTrue(validate_image_file('test.gif'))
+        self.assertTrue(validate_image_file('test.bmp'))
+        self.assertTrue(validate_image_file('test.webp'))
+    
+    def test_validate_image_file_invalid(self):
+        """Test validation of invalid image files"""
+        self.assertFalse(validate_image_file('test.txt'))
+        self.assertFalse(validate_image_file('test.pdf'))
+        self.assertFalse(validate_image_file('test.exe'))
+        self.assertFalse(validate_image_file(''))
+        self.assertFalse(validate_image_file(None))
+    
+    def test_validate_file_size_valid(self):
+        """Test validation of valid file size"""
+        content = b'x' * 1024  # 1KB
+        file = FileStorage(stream=BytesIO(content), filename='test.png')
+        self.assertTrue(validate_file_size(file, max_size=16 * 1024 * 1024))
+    
+    def test_validate_file_size_invalid(self):
+        """Test validation of invalid file size"""
+        content = b'x' * (17 * 1024 * 1024)  # 17MB
+        file = FileStorage(stream=BytesIO(content), filename='test.png')
+        self.assertFalse(validate_file_size(file, max_size=16 * 1024 * 1024))
+
+
+if __name__ == '__main__':
+    unittest.main()
+
