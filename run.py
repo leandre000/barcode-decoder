@@ -6,6 +6,7 @@ Application entry point
 from app import app
 from utils.logger import setup_logger
 import config
+    # Commit 35: 2025-11-25 12:12:58
 
 # Setup logging
 logger = setup_logger('barcode_decoder', str(config.LOG_FILE), config.LOG_LEVEL)
