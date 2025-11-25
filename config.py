@@ -1,12 +1,14 @@
 """
 Configuration settings for Barcode Decoder
     # Commit 72: 2025-11-25 12:13:11
+    # Commit 77: 2025-11-25 12:13:13
 """
 import os
 from pathlib import Path
     # Commit 25: 2025-11-25 12:12:55
     # Commit 52: 2025-11-25 12:13:04
 
+    # Commit 84: 2025-11-25 12:13:15
 # Base directory
     # Commit 13: 2025-11-25 12:12:51
 BASE_DIR = Path(__file__).parent
