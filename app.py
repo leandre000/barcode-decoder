@@ -1,39 +1,16 @@
-    # Commit 163: 2025-11-25 12:13:43
-    # Commit 177: 2025-11-25 12:13:48
-    # Commit 181: 2025-11-25 12:13:49
-    # Commit 194: 2025-11-25 12:13:54
+
+
 """
-    # Commit 113: 2025-11-25 12:13:25
-    # Commit 145: 2025-11-25 12:13:36
-    # Commit 196: 2025-11-25 12:13:55
-    # Commit 150: 2025-11-25 12:13:38
-    # Commit 157: 2025-11-25 12:13:41
-    # Commit 3: 2025-11-25 12:12:48
-    # Commit 176: 2025-11-25 12:13:47
-    # Commit 156: 2025-11-25 12:13:40
-    # Commit 148: 2025-11-25 12:13:37
-    # Commit 144: 2025-11-25 12:13:35
-    # Commit 129: 2025-11-25 12:13:30
-    # Commit 51: 2025-11-25 12:13:03
+
 Main Flask application for Barcode Decoder
-    # Commit 83: 2025-11-25 12:13:15
-    # Commit 7: 2025-11-25 12:12:49
-    # Commit 101: 2025-11-25 12:13:21
-    # Commit 35: 2025-11-25 12:12:58
-    # Commit 89: 2025-11-25 12:13:17
-    # Commit 95: 2025-11-25 12:13:19
+
 """
-    # Commit 54: 2025-11-25 12:13:04
-    # Commit 29: 2025-11-25 12:12:56
-    # Commit 43: 2025-11-25 12:13:01
-    # Commit 72: 2025-11-25 12:13:11
+
 from flask import Flask, render_template, request, jsonify
 import os
-    # Commit 50: 2025-11-25 12:13:03
 from werkzeug.utils import secure_filename
 from decoders.barcode_decoder import BarcodeDecoder
-    # Commit 34: 2025-11-25 12:12:58
-    # Commit 9: 2025-11-25 12:12:50
+
 from utils.image_processor import ImageProcessor
 from utils.validators import validate_image_file
 from utils.logger import setup_logger
@@ -56,12 +33,10 @@ os.makedirs('temp', exist_ok=True)
 decoder = BarcodeDecoder()
 image_processor = ImageProcessor()
 
-
 @app.route('/')
 def index():
     """Main page"""
     return render_template('index.html')
-
 
 @app.route('/api/decode', methods=['POST'])
 def decode_barcode():
@@ -104,7 +79,6 @@ def decode_barcode():
     except Exception as e:
         logger.error(f"Error decoding barcode: {str(e)}", exc_info=True)
         return jsonify({'error': str(e)}), 500
-
 
 @app.route('/api/batch', methods=['POST'])
 def batch_decode():
@@ -156,12 +130,10 @@ def batch_decode():
         logger.error(f"Error in batch processing: {str(e)}", exc_info=True)
         return jsonify({'error': str(e)}), 500
 
-
 @app.route('/health')
 def health():
     """Health check endpoint"""
     return jsonify({'status': 'healthy', 'service': 'barcode-decoder'})
-
 
 if __name__ == '__main__':
     logger.info("Starting Barcode Decoder application")
