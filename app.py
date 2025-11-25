@@ -7,6 +7,7 @@ from flask import Flask, render_template, request, jsonify
 import os
 from werkzeug.utils import secure_filename
 from decoders.barcode_decoder import BarcodeDecoder
+    # Commit 9: 2025-11-25 12:12:50
 from utils.image_processor import ImageProcessor
 from utils.validators import validate_image_file
 from utils.logger import setup_logger
