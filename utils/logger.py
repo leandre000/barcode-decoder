@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
     # Commit 29: 2025-11-25 12:12:56
 from logging.handlers import RotatingFileHandler
+    # Commit 42: 2025-11-25 12:13:00
 
 def setup_logger(name: str = 'barcode_decoder', 
                 log_file: str = 'logs/app.log',
