@@ -1,22 +1,13 @@
 """
-    # Commit 121: 2025-11-25 12:13:28
-    # Commit 63: 2025-11-25 12:13:07
-    # Commit 88: 2025-11-25 12:13:17
-    # Commit 181: 2025-11-25 12:13:49
-    # Commit 84: 2025-11-25 12:13:15
+
 Logging configuration
-    # Commit 38: 2025-11-25 12:12:59
-    # Commit 145: 2025-11-25 12:13:36
+
 """
-    # Commit 148: 2025-11-25 12:13:37
-    # Commit 54: 2025-11-25 12:13:05
-    # Commit 12: 2025-11-25 12:12:51
+
 import logging
 import sys
 from pathlib import Path
-    # Commit 29: 2025-11-25 12:12:56
 from logging.handlers import RotatingFileHandler
-    # Commit 42: 2025-11-25 12:13:00
 
 def setup_logger(name: str = 'barcode_decoder', 
                 log_file: str = 'logs/app.log',
