@@ -11,3 +11,4 @@ python-barcode==0.15.1
 pyaztec==0.1.0
 datamatrix==0.0.1
 
+
