@@ -1,26 +1,12 @@
-    # Commit 66: 2025-11-25 12:13:09
-    # Commit 114: 2025-11-25 12:13:26
-    # Commit 2: 2025-11-25 12:12:48
-    # Commit 180: 2025-11-25 12:13:49
-    # Commit 156: 2025-11-25 12:13:40
-    # Commit 91: 2025-11-25 12:13:18
-    # Commit 152: 2025-11-25 12:13:39
-    # Commit 37: 2025-11-25 12:12:59
-    # Commit 5: 2025-11-25 12:12:49
-    # Commit 188: 2025-11-25 12:13:52
-    # Commit 93: 2025-11-25 12:13:18
+
+
 """
-    # Commit 179: 2025-11-25 12:13:49
 Tests for barcode decoder
-    # Commit 58: 2025-11-25 12:13:06
-    # Commit 105: 2025-11-25 12:13:23
-    # Commit 9: 2025-11-25 12:12:50
-    # Commit 71: 2025-11-25 12:13:10
+
 """
 import unittest
 import numpy as np
 from decoders.barcode_decoder import BarcodeDecoder
-
 
 class TestBarcodeDecoder(unittest.TestCase):
     """Test cases for BarcodeDecoder class"""
@@ -61,7 +47,6 @@ class TestBarcodeDecoder(unittest.TestCase):
         empty_image = np.zeros((100, 100), dtype=np.uint8)
         results = self.decoder.decode(empty_image)
         self.assertIsInstance(results, list)
-
 
 if __name__ == '__main__':
     unittest.main()
