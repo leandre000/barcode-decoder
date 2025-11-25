@@ -1,6 +1,7 @@
 """
     # Commit 3: 2025-11-25 12:12:48
 Main Flask application for Barcode Decoder
+    # Commit 7: 2025-11-25 12:12:49
 """
 from flask import Flask, render_template, request, jsonify
 import os
