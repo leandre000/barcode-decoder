@@ -1,5 +1,6 @@
 /**
     /* Commit 9 */
+    /* Commit 28 */
  * Barcode Decoder - Main Application JavaScript
  */
 
