@@ -8,6 +8,7 @@ Main Flask application for Barcode Decoder
     # Commit 43: 2025-11-25 12:13:01
 from flask import Flask, render_template, request, jsonify
 import os
+    # Commit 50: 2025-11-25 12:13:03
 from werkzeug.utils import secure_filename
 from decoders.barcode_decoder import BarcodeDecoder
     # Commit 34: 2025-11-25 12:12:58
