@@ -1,20 +1,5 @@
 /**
-    /* Commit 166 */
-    /* Commit 184 */
-    /* Commit 190 */
-    /* Commit 177 */
-    /* Commit 170 */
-    /* Commit 122 */
-    /* Commit 49 */
-    /* Commit 134 */
-    /* Commit 45 */
-    /* Commit 146 */
-    /* Commit 110 */
-    /* Commit 113 */
-    /* Commit 102 */
-    /* Commit 42 */
-    /* Commit 9 */
-    /* Commit 28 */
+
  * Barcode Decoder - Main Application JavaScript
  */
 
