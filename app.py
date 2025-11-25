@@ -5,6 +5,7 @@ Main Flask application for Barcode Decoder
     # Commit 35: 2025-11-25 12:12:58
 """
     # Commit 29: 2025-11-25 12:12:56
+    # Commit 43: 2025-11-25 12:13:01
 from flask import Flask, render_template, request, jsonify
 import os
 from werkzeug.utils import secure_filename
